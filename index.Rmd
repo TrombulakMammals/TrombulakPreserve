@@ -1,0 +1,139 @@
+---
+title: "Trombulak Camera Sites"
+output: html_document
+---
+#### Tap or click on any circle marker on the Trombulak Preserve map below to see the photos and videos that the camera traps captured. Pink circles were from the first deployment, orange from the second, and blue from the third.
+
+```{r echo=FALSE}
+library("leaflet")
+Site1 <- paste(sep = "<br/>",
+  "<b><a href='https://trombulakmammals.wixsite.com/trombulak-mammals'>Site highlights (no data)</a></b>",
+  "Site 1",
+  "Deployment 1")
+Site2 <- paste(sep = "<br/>",
+  "<b><a href='https://trombulakmammals.wixsite.com/trombulak-mammals/site2'>Site highlights</a></b>",
+  "Site 2",
+  "Deployment 1")
+Site3 <- paste(sep = "<br/>",
+  "<b><a href='https://trombulakmammals.wixsite.com/trombulak-mammals/site-3'>Site Highlights (no data)</a></b>",
+  "Site 3",
+  "Deployment 1")
+Site4 <- paste(sep = "<br/>",
+  "<b><a href='https://trombulakmammals.wixsite.com/trombulak-mammals/site-4'>Site highlights</a></b>",
+  "Site 4",
+  "Deployment 1")
+Site5<-  paste(sep = "<br/>",
+  "<b><a href='https://trombulakmammals.wixsite.com/trombulak-mammals/site-5'>Site highlights</a></b>",
+  "Site 5",
+  "Deployment 2")
+Site6<-  paste(sep = "<br/>",
+  "<b><a href='https://trombulakmammals.wixsite.com/trombulak-mammals/site-6'>Site highlights</a></b>",
+  "Site 6",
+  "Deployment 2")
+Site7<-  paste(sep = "<br/>",
+  "<b><a href='https://trombulakmammals.wixsite.com/my-site'>Site highlights</a></b>",
+  "Site 7",
+  "Deployment 3")
+Site8<-  paste(sep = "<br/>",
+  "<b><a href='https://trombulakmammals.wixsite.com/my-site/site-8'>Site highlights</a></b>",
+  "Site 8",
+  "Deployment 3")
+Site9<-  paste(sep = "<br/>",
+  "<b><a href=https://trombulakmammals.wixsite.com/my-site/site-9'>Site highlights</a></b>",
+  "Site 9",
+  "Deployment 3")
+
+Midd <- leaflet()%>%
+  addTiles() %>%
+  addCircleMarkers(
+    radius = 5,
+    stroke = TRUE,
+    weight = 3,
+    opacity= 1,
+    color="darkolivegreen",
+    fillOpacity = .7,
+    fillColor = "plum",
+    popup = Site1,
+    lng = -73.16489, lat = 43.99894) %>%
+  addCircleMarkers(
+    radius = 5,
+    stroke = TRUE,
+    weight = 3,
+    opacity= 1,
+    color="darkolivegreen",
+    fillOpacity = .7,
+    fillColor = "plum",
+    popup = Site2,
+    lng = -73.16471, lat = 43.99863) %>%
+  addCircleMarkers(
+    radius = 5,
+    stroke = TRUE,
+    weight = 3,
+    opacity= 1,
+    color="darkolivegreen",
+    fillOpacity = .7,
+    fillColor = "plum",
+    popup = Site3,
+    lng = -73.16302, lat = 43.99679) %>%
+  addCircleMarkers(
+    radius = 5,
+    stroke = TRUE,
+    weight = 3,
+    opacity= 1,
+    color="darkolivegreen",
+    fillOpacity = .7,
+    fillColor = "plum",
+    popup = Site4,
+    lng = -73.16206, lat = 43.99861) %>%
+    addCircleMarkers(
+    radius = 5,
+    stroke = TRUE,
+    weight = 3,
+    opacity= 1,
+    color="darkolivegreen",
+    fillOpacity = .7,
+    fillColor = "goldenrod",
+    popup = Site5,
+    lng = -73.16357, lat = 44.00041) %>%
+  addCircleMarkers(
+    radius = 5,
+    stroke = TRUE,
+    weight = 3,
+    opacity= 1,
+    color="darkolivegreen",
+    fillOpacity = .7,
+    fillColor = "goldenrod",
+    popup = Site6,
+    lng = -73.16363, lat = 44.00062) %>%
+  addCircleMarkers(
+    radius = 5,
+    stroke = TRUE,
+    weight = 3,
+    opacity= 1,
+    color="darkolivegreen",
+    fillOpacity = .7,
+    fillColor = "skyblue",
+    popup = Site7,
+    lng = -73.16340, lat = 44.00111) %>%
+  addCircleMarkers(
+    radius = 5,
+    stroke = TRUE,
+    weight = 3,
+    opacity= 1,
+    color="darkolivegreen",
+    fillOpacity = .7,
+    fillColor = "skyblue",
+    popup = Site8,
+    lng = -73.16343, lat = 44.00100) %>%
+  addCircleMarkers(
+    radius = 5,
+    stroke = TRUE,
+    weight = 3,
+    opacity= 1,
+    color="darkolivegreen",
+    fillOpacity = .7,
+    fillColor = "skyblue",
+    popup = Site9,
+    lng = -73.16323, lat = 44.00108)
+Midd
+
