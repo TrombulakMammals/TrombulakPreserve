@@ -2,6 +2,7 @@
 title: "Trombulak Camera Sites"
 output: html_document
 ---
+##### Understanding the land is the first step in cultivating a relationship where both human and wildlife needs are met. By observing how the land is used and by which animals, management and development decisions regarding the area can be more informed. With a deeper knowledge of the Trombulak Preserve, the Middlebury community can develop personal connections and a sense of stewardship with the land. We conducted a noninvasive study in the spring semester of 2023 to observe the mammals of the preserve. We set up 2-4 camera traps during a total of 4 weeks from early March to early May in 9 locations in the preserve. We found activity of beavers, white-tailed deer, muskrats, otters, mink, grey foxes, grey squirrels, and coyotes, as well as several bird and reptile species.  
 #### Tap or click on any circle marker on the Trombulak Preserve map below to see the photos and videos that the camera traps captured. Pink circles were from the first deployment, orange from the second, and blue from the third.
 
 ```{r echo=FALSE}
